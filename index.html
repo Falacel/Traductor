@@ -2,15 +2,39 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>Traductor</title>
+        <title>Traductor con API</title>
         <link rel="stylesheet" href="styless.css">
     </head>
 
 <body>
     <div class="container">
-        <h2> Traductor Simple</h2>
-        <textarea id="inputText" placeholder="Escrbie aquí"></textarea>
+        <h2>🌍 Traductor Online</h2>
+        <textarea id="inputText" placeholder="Escrbie aquí..."></textarea>
+        
+        <div>
+            <label>De: </label>
+            <select id="fromLang">
+                <option value="en">Inglés</option>
+                <option value="es">Español</option>
+                <option value="fr">Francés</option>
+                <option value="de">Alemán</option>
+                <option value="it">Italiano</option>
+                <option value="pt">Portugués</option>
+            </select>
+
+             <label>A: </label>
+             <select id="toLang">
+                <option value="en">Inglés</option>
+                <option value="es">Español</option>
+                <option value="fr">Francés</option>
+                <option value="de">Alemán</option>
+                <option value="it">Italiano</option>
+                <option value="pt">Portugués</option>
+            </select>
+        </div>
+        
         <button onclick="translateText()">Traducir</button>
+
         <div class="output" id="outputText"></div>
     </div>
 
